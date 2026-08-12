@@ -40,7 +40,7 @@ The project explores:
 
 The first sequence is complete.
 
-## Current focus
+## Learning direction
 
 ```text
 C / Unix fundamentals
