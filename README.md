@@ -40,12 +40,6 @@ The project explores:
 
 The first sequence is complete.
 
-### [Systematic Program Design](https://github.com/maximecoia/Systematic-Program-Design-)
-
-Coursework and exercises from UBC's *Systematic Program Design* curriculum.
-
-It covers systematic function and data design, recursion, abstraction, search, accumulators, trees, and graphs using Racket.
-
 ## Current focus
 
 ```text
