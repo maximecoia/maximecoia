@@ -2,7 +2,7 @@
 
 # Maxime Coia
 
-**Computer science learner · C & Unix · Building from first principles**
+**@ 42 Marseille coming soon**
 
 Learning how software works underneath the abstractions — then turning that understanding into small, complete projects.
 
