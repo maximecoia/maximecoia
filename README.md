@@ -1,12 +1,11 @@
 ### Maxime Coia
 
-I left banking to build technical depth from scratch. The work sits on the layer
-most people abstract away: C, Unix, processes, memory, and the failure paths that
-never make it into a tutorial. Starting at 42 Marseille in November 2026.
+I left banking to build technical depth from scratch. I work under the
+frameworks: C, Unix, file descriptors, memory, and the error cases tutorials
+leave out. I start at 42 Marseille in November 2026.
 
-The bet, stated plainly: depth at the bottom layer compounds upward through
-everything built on top of it, and judgment about systems gets more valuable as
-writing code gets cheaper, not less.
+Writing code got cheap. Knowing whether the code is right did not. I would
+rather be good at the second one, and that is built at the bottom.
 
 ---
 
