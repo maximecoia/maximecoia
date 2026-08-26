@@ -50,7 +50,15 @@ at a time.
 
 ---
 
+#### Background
+
+Seven months building a gamified financial-education product on my own, then
+eight months at BNP Paribas as a banking advisor, across from the people making
+the decisions that product was trying to teach. The layer that held my attention
+in both was the one underneath.
+
 #### Elsewhere
 
 * Writing about leverage, judgment, and what AI changes: [@MaximeCoia](https://x.com/MaximeCoia)
+* [linkedin.com/in/maxime-coia](https://www.linkedin.com/in/maxime-coia/)
 * coiamaxime@gmail.com
