@@ -1,73 +1,56 @@
-<div align="center">
+### Maxime Coia
 
-# Maxime Coia
+I left banking to build technical depth from scratch. The work sits on the layer
+most people abstract away: C, Unix, processes, memory, and the failure paths that
+never make it into a tutorial. Starting at 42 Marseille in November 2026.
 
-**@ 42 Marseille coming soon**
-
-Learning how software works underneath the abstractions — then turning that understanding into small, complete projects.
-
-</div>
-
----
-
-## About me
-
-I’m transitioning from **banking into software engineering**.
-
-After completing the **42 Piscine**, I’m focused on strengthening the fundamentals that make everything else easier to understand: C, Unix, processes, files, memory, networking, algorithms, and program design.
-
-I’m especially interested in the intersection of **systems programming, AI, cybersecurity, fintech, and product building**.
-
-My goal is not to collect technologies. It is to become capable of understanding systems deeply enough to build useful things from the ground up.
-
-## What I'm building
-
-### [unix-toolbox](https://github.com/maximecoia/unix-toolbox)
-
-Small Unix utilities rebuilt in C, one mechanism at a time.
-
-`mini_echo` → `mini_cat` → `mini_cp` → `mini_wc`
-
-The project explores:
-
-- command-line arguments and string traversal;
-- file descriptors and POSIX I/O;
-- `open()`, `read()`, `write()`, and `close()`;
-- buffers and streaming;
-- resource ownership and error handling;
-- state carried across reads;
-- behavioral testing and CI.
-
-The first sequence is complete.
-
-## Learning direction
-
-```text
-C / Unix fundamentals
-        ↓
-processes, networking, systems
-        ↓
-Python for automation, AI and data
-        ↓
-Rust for modern systems programming
-        ↓
-TypeScript for shipping user-facing products
-```
-
-Alongside those languages, I treat **Git, Bash, SQL, and Linux** as core tools rather than optional extras.
-
-## How I learn
-
-- Build small programs that can be understood end to end.
-- Understand the mechanism before adding abstraction.
-- Derive implementations from requirements instead of memorizing code.
-- Test behavior, edge cases, and failure paths.
-- Turn theory into working software.
+The bet, stated plainly: depth at the bottom layer compounds upward through
+everything built on top of it, and judgment about systems gets more valuable as
+writing code gets cheaper, not less.
 
 ---
 
-<div align="center">
+#### Selected work
 
-**Currently building the foundations for larger systems and products.**
+**[unix-toolbox](https://github.com/maximecoia/unix-toolbox)** · C99, POSIX, CI
 
-</div>
+Small Unix utilities rebuilt one mechanism at a time: `mini_echo`, `mini_cat`,
+`mini_cp`, `mini_wc`.
+
+* **Constraint.** No cloning of full GNU behavior. Each program stays small
+  enough to be understood end to end, from argument parsing through every
+  failure path.
+* **What it covers.** File descriptors and POSIX I/O, buffers and partial
+  writes, state carried across reads, resource ownership, behavioral tests
+  running in CI.
+* **What it cost.** Partial writes and EOF are where the naive implementation
+  quietly breaks. Finding that out is most of the value of building it.
+
+**[Python_Modules](https://github.com/maximecoia/Python_Modules)** · Python
+
+Progressive exercises taken to the point where each one can be rebuilt from a
+blank file instead of recognized.
+
+---
+
+#### Now
+
+**August 2026.** Pre-core work ahead of November: allocation and ownership in C,
+`ft_split` and its partial-failure path, gdb and valgrind until they are reflex
+rather than lookup. Ordered by what does not survive being done fifteen minutes
+at a time.
+
+---
+
+#### How I work
+
+* Understand the mechanism before adding the abstraction.
+* Derive the implementation from the requirement instead of recalling the code.
+* Test the failure paths, because that is where understanding actually gets checked.
+
+---
+
+#### Elsewhere
+
+* Writing about leverage, judgment, and what AI changes: [@MaximeCoia](https://x.com/MaximeCoia)
+* coiamaxime@gmail.com
