@@ -25,19 +25,30 @@ Small Unix utilities rebuilt one mechanism at a time: `mini_echo`, `mini_cat`,
 * **What it cost.** Partial writes and EOF are where the naive implementation
   quietly breaks. Finding that out is most of the value of building it.
 
-**[Python_Modules](https://github.com/maximecoia/Python_Modules)** · Python
+**[learning_tree-ML-systems](https://github.com/maximecoia/learning_tree-ML-systems)** · Python
 
-Progressive exercises taken to the point where each one can be rebuilt from a
-blank file instead of recognized.
+A progressive tree toward ML systems, each exercise taken to the point where it
+can be rebuilt from a blank file instead of recognized.
+
+* **Constraint.** An exercise is not finished when it runs. It is finished when
+  it can be written again from nothing.
+* **What it covers.** Types and control flow, then aggregation over input that
+  does not conform, then classes that carry their own invariants. Amounts held
+  as integer centimes rather than floats, because the representation is the
+  decision.
+* **Where it goes.** The layer underneath model code: how data is represented,
+  what happens to the rows that are malformed, and whether the numbers coming
+  out still mean anything.
 
 ---
 
 #### Now
 
-**August 2026.** Pre-core work ahead of November: allocation and ownership in C,
-`ft_split` and its partial-failure path, gdb and valgrind until they are reflex
-rather than lookup. Ordered by what does not survive being done fifteen minutes
-at a time.
+**September 2026.** Two lines running in parallel ahead of November. In C:
+allocation and ownership, `ft_split` and its partial-failure path, gdb and
+valgrind until they are reflex rather than lookup. In Python: the learning tree
+above, pushed toward data representation and ML systems. Ordered by what does
+not survive being done fifteen minutes at a time.
 
 ---
 
