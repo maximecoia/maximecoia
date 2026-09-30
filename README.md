@@ -47,9 +47,15 @@ Small Unix utilities rebuilt one mechanism at a time: `mini_echo`, `mini_cat`,
   failure path.
 * **What it covers.** File descriptors and POSIX I/O, buffers and partial
   writes, state carried across reads, resource ownership, behavioral tests
-  running in CI.
+  running in CI on Linux and macOS.
+* **How the tests are checked.** Each utility was broken on purpose, fourteen
+  ways in all, and thirteen are caught. A shell cannot make `write()` return
+  short or `read()` fail, so the utilities are rebuilt with both redirected at
+  compile time: every write cut to one byte, and a read that fails with `EIO`
+  or `EINTR` on demand.
 * **What it cost.** Partial writes and EOF are where the naive implementation
-  quietly breaks. Finding that out is most of the value of building it.
+  quietly breaks. Finding that out is most of the value of building it, and
+  the tests now show it.
 
 ---
 
