@@ -65,15 +65,17 @@ Small Unix utilities rebuilt one mechanism at a time: `mini_echo`, `mini_cat`,
 object: `gpt.py`, a causal GPT in `torch` written from a blank file, with the
 attention written by hand rather than called.
 
-**How it is graded.** A black-box acceptance test, written before the model:
+**How it is graded.** A
+[black-box acceptance test](https://github.com/maximecoia/learning_tree-ML-systems#the-acceptance-test), written before the model:
 seven gates, from the shape of the logits and a loss at initialisation near
 `ln(65)`, through a drift of exactly zero when future tokens change, to trained
 weights that land 0.10 below a counted bigram on held-out text. The model goes
 in one piece at a time, each piece turning a gate green. Today the count is 0
-of 7.
+of 7, and [the phase page](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/ms-00-prepa/README.md#what-to-do-in-order)
+keeps it current.
 
-**Then the write-up.** The model closes the phase, and a public write-up closes
-L1: the corpus with its licence and the script that rebuilds its split, the run
+**Then the write-up.** The model closes the phase, and a
+[public write-up](https://github.com/maximecoia/learning_tree-ML-systems#what-closes-l1) closes L1: the corpus with its licence and the script that rebuilds its split, the run
 with its seed and versions, both loss curves whole, unsorted samples, and a
 report someone else can replay without asking a question.
 
