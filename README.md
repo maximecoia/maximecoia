@@ -56,6 +56,10 @@ Small Unix utilities rebuilt one mechanism at a time: `mini_echo`, `mini_cat`,
 * **What it cost.** Partial writes and EOF are where the naive implementation
   quietly breaks. Finding that out is most of the value of building it, and
   the tests now show it.
+* **Where it leads.** The C continues in the libft, then in the inference
+  engine of
+  [`ms-01-inference`](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/ms-01-inference/README.md),
+  the first phase of the roadmap at the school.
 
 ---
 
