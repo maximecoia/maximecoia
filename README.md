@@ -71,8 +71,9 @@ of 7.
 **The C under it.** The libft is written: 43 functions from the contracts of
 the standard library, a self-test of 44 checks that goes red when a function is
 broken on purpose, no leaked byte. It is a 42 subject, so it stays private by
-the school's charter. The C engine that loads the trained model and places its
-throughput on a roofline waits for the weights `gpt.py` will produce.
+the school's charter. The C engine that generates text and places its
+throughput on a roofline moved to the first phase at the school, after the
+measurement tools it needs.
 
 ---
 
