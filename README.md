@@ -21,9 +21,8 @@ socle through a GPT trained from a blank file to C, CUDA and a contribution to
 an inference engine.
 
 * **Constraint.** Running is not the bar. An exercise counts when it can be
-  written again from a blank file, every step is graded by a checker that is
-  not its own author, and every check was broken on purpose before it was
-  trusted.
+  written again from a blank file, nothing is graded by its own author alone,
+  and every check was broken on purpose before it was trusted.
 * **Where it stands.** The Python socle is complete, 26 of 26, ending in
   `releve`, an installed command with eleven tests written against what it
   prints. The maths are complete too, 20 of 20 in plain Python: linear algebra
@@ -56,10 +55,9 @@ Small Unix utilities rebuilt one mechanism at a time: `mini_echo`, `mini_cat`,
 
 #### Now
 
-**End of September 2026.** The rest of the prep is either done or waiting on
-one object, so until 31 October the work is that object: `gpt.py`, a causal
-GPT in `torch` written from a blank file, with the attention written by hand
-rather than called.
+**Until 31 October 2026.** The rest of the prep is done, so the work is one
+object: `gpt.py`, a causal GPT in `torch` written from a blank file, with the
+attention written by hand rather than called.
 
 **How it is graded.** A black-box acceptance test, written before the model:
 seven gates, from the shape of the logits and a loss at initialisation near
@@ -67,6 +65,11 @@ seven gates, from the shape of the logits and a loss at initialisation near
 weights that land 0.10 below a counted bigram on held-out text. The model goes
 in one piece at a time, each piece turning a gate green. Today the count is 0
 of 7.
+
+**Then the write-up.** The model closes the phase, and a public write-up closes
+L1: the corpus with its licence and the script that rebuilds its split, the run
+with its seed and versions, both loss curves whole, unsorted samples, and a
+report someone else can replay without asking a question.
 
 **The C under it.** The libft is written: 43 functions from the contracts of
 the standard library, a self-test of 44 checks that goes red when a function is
