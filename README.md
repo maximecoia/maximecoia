@@ -72,9 +72,7 @@ of 7.
 the standard library, a self-test of 44 checks that goes red when a function is
 broken on purpose, no leaked byte. It is a 42 subject, so it stays private by
 the school's charter. The C engine that loads the trained model and places its
-throughput on a roofline waits for the weights `gpt.py` will produce, and the
-CS336 suite, which grades the same material a second way, waits until after
-the deadline.
+throughput on a roofline waits for the weights `gpt.py` will produce.
 
 ---
 
