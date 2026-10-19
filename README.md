@@ -1,4 +1,12 @@
-### Maxime Coia
+<div align="center">
+
+# Maxime Coia
+
+**Learning to run models, from the bottom of the stack.**
+
+<img src="https://skillicons.dev/icons?i=py,pytorch,c,bash,linux,git,githubactions" alt="Python, PyTorch, C, Bash, Linux, Git and GitHub Actions">
+
+</div>
 
 I left banking to build technical depth from scratch. I work under the
 frameworks: C, Unix, file descriptors, memory, and the error cases tutorials
@@ -11,31 +19,54 @@ rather be good at the second one, and that is built at the bottom.
 
 ---
 
-#### Selected work
+## Selected work
 
 **[learning_tree-ML-systems](https://github.com/maximecoia/learning_tree-ML-systems)** · Python, PyTorch
 
-The public trace of a roadmap toward ML systems: eight phases and 93
-sub-modules across the 42 curriculum and the years after it, from a Python
-socle through a GPT trained from a blank file to C, CUDA and a contribution to
-an inference engine.
+The public trace of a roadmap toward ML systems. It has eight phases, numbered
+0 to 7 like their folders. They run alongside the 42 common core and the years
+after it. The route goes from a Python socle, through a GPT trained from a
+blank file and a measured inference server, to a contribution to the vLLM
+organisation.
 
 * **Constraint.** Running is not the bar. An exercise counts when it can be
-  written again from a blank file, nothing is graded by its own author alone,
-  and every check was broken on purpose before it was trusted.
-* **Where it stands.** The Python socle is complete, 26 of 26, ending in
-  `releve`, an installed command with eleven tests written against what it
-  prints. The maths are complete too, 20 of 20 in plain Python: linear algebra
-  up to a 2D transformation engine, probability held against closed forms, and
-  statistics that count their own error rate. The twenty-one Tensor Puzzles
-  are solved, and chapters 2 to 5 of Raschka's book are answered, with tests
-  written against what each chapter states, since the book ships almost none.
-* **What it cost.** A course I had written for myself, and the Zero to Hero
-  track under it, both removed on one measurement: the layer meant to prepare
-  for the deliverable was not teaching the object the deliverable is graded
-  on. Both are in the history, and
+  written again from a blank file. Nothing is graded by its own author alone.
+  Every check was broken on purpose before it was trusted.
+* **The phases.** `ms-00-prepa` → `ms-01-inference` → `ms-02-infrastructure` →
+  `ms-03-contribution` → `ms-04-agents-reseau` → `ms-05-fin-tronc-commun` →
+  `ms-06-apres-tronc` → `ms-07-alternance`. Phases 1 to 5 follow the school's
+  milestones. The roadmap carries no estimated dates, and
+  [the reason is written down](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/DECISIONS.md#why-the-roadmap-has-no-dates).
+* **Where it stands.** Phase 0 is closed. It holds the Python socle, 26 of 26
+  exercises, ending in `releve`, an installed command with eleven tests written
+  against what it prints. It holds the maths, 20 of 20 in plain Python: linear
+  algebra up to a 2D transformation engine, probability held against closed
+  forms, and statistics that count their own error rate. It holds the
+  twenty-one Tensor Puzzles, and chapters 2 to 5 of Raschka's book, answered
+  with tests written against what each chapter states, since the book ships
+  almost none. Phase 1 is in progress, and its 40 measurement and inference
+  exercises are done.
+* **The first deliverable.**
+  [L1](https://github.com/maximecoia/learning_tree-ML-systems/tree/main/ms-00-prepa/l1-01-gpt-corpus)
+  is a character-level GPT trained on Jules Verne, with the attention written
+  by hand. It has 164,065 parameters and trained in 69 seconds on a laptop CPU.
+  Its dev loss is 1.7480, against 2.3928 for a counted bigram. A
+  [black-box acceptance test](https://github.com/maximecoia/learning_tree-ML-systems#the-acceptance-test),
+  written before the model, grades it.
+* **What it cost.** A course I had written for myself went first. In eleven
+  days it produced 141,783 lines of lessons and 2,038 lines of machine learning
+  code, and none of the 34 exercises that already existed had been handed in.
+  The Zero to Hero track went next. Across the prep, the word `torch` appeared
+  twice, while the acceptance test imports it on its first line. That work is
+  kept in the history.
   [`DECISIONS.md`](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/DECISIONS.md)
   says why.
+* **What moved.** The C inference engine, `c-06-moteur`, first left the prep and
+  then left phase 1. It now waits until after the common core, in
+  [`ms-06-apres-tronc`](https://github.com/maximecoia/learning_tree-ML-systems/tree/main/ms-06-apres-tronc).
+  It grafts onto no school project, and its delay can be caught up later.
+  [The decision](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/DECISIONS.md#the-c-engine-and-why-it-left-the-prep)
+  is on record.
 
 **[unix-toolbox](https://github.com/maximecoia/unix-toolbox)** · C99, POSIX, CI
 
@@ -51,48 +82,42 @@ Small Unix utilities rebuilt one mechanism at a time: `mini_echo`, `mini_cat`,
 * **How the tests are checked.** Each utility was broken on purpose, fourteen
   ways in all, and thirteen are caught. A shell cannot make `write()` return
   short or `read()` fail, so the utilities are rebuilt with the calls
-  redirected at compile time: every write cut to one byte, and for `mini_cp`
-  a read that fails with `EIO` or `EINTR` on demand.
+  redirected at compile time. Every write is cut to one byte, and `mini_cp`
+  gets a read that fails with `EIO` or `EINTR` on demand.
 * **What it cost.** Partial writes and EOF are where the naive implementation
   quietly breaks. Finding that out is most of the value of building it, and
   the tests now show it.
-* **Where it leads.** The C continues in the libft, then in the inference
-  engine of
-  [`ms-01-inference`](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/ms-01-inference/README.md),
-  the first phase of the roadmap at the school.
+* **Where it leads.** The C continues in the libft, then in the school's C
+  projects. The C inference engine comes later, after the common core.
 
 ---
 
-#### Now
+## Now
 
-**Until 31 October 2026.** The rest of the prep is done, so the work is one
-object: `gpt.py`, a causal GPT in `torch` written from a blank file, with the
-attention written by hand rather than called.
+**Phase 1, `ms-01-inference`.** It is in progress. Its 40 measurement and
+inference exercises are done. They run from a stopwatch that ignores warm-up to
+the point where a served model breaks under load.
+[The phase page](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/ms-01-inference/README.md#what-to-do-in-order)
+lists the work in order.
 
-**How it is graded.** A
-[black-box acceptance test](https://github.com/maximecoia/learning_tree-ML-systems#the-acceptance-test), written before the model:
-seven gates, from the shape of the logits and a loss at initialisation near
-`ln(65)`, through a drift of exactly zero when future tokens change, to trained
-weights that land 0.10 below a counted bigram on held-out text. The model goes
-in one piece at a time, each piece turning a gate green. Today the count is 0
-of 7, and [the phase page](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/ms-00-prepa/README.md#what-to-do-in-order)
-keeps it current.
+**L2 is next.** It is the throughput and latency curve of an inference server.
+It comes before the school starts on 9 November 2026. The target is the
+saturation curve of an unknown server, produced in half a day. A reader grades
+it, not a terminal, because the write-up is public.
 
-**Then the write-up.** The model closes the phase, and a
-[public write-up](https://github.com/maximecoia/learning_tree-ML-systems#what-closes-l1) closes L1: the corpus with its licence and the script that rebuilds its split, the run
-with its seed and versions, both loss curves whole, unsorted samples, and a
-report someone else can replay without asking a question.
+**What closed.** The prep, `ms-00-prepa`, closed on 2 October 2026. L1, a
+character-level GPT trained on Jules Verne with hand-written attention, was
+published on 1 October 2026 and validated on 2 October. The
+[write-up that closes L1](https://github.com/maximecoia/learning_tree-ML-systems#what-closes-l1)
+lists what a stranger needs to replay it without asking a question.
 
-**The C under it.** The libft is written: 43 functions from the contracts of
-the standard library, a self-test of 44 checks that goes red when a function is
-broken on purpose, no leaked byte. It is a 42 subject, so it stays private by
-the school's charter. The C engine that generates text and places its
-throughput on a roofline moved to the first phase at the school, after the
-measurement tools it needs.
+**The C under it.** The libft is written. It stays private, because it is a 42
+subject and the school's charter forbids publishing a solution. The C inference
+engine waits behind the common core.
 
 ---
 
-#### How I work
+## How I work
 
 * Understand the mechanism before adding the abstraction.
 * Derive the implementation from the requirement instead of recalling the code.
@@ -101,14 +126,14 @@ measurement tools it needs.
 
 ---
 
-#### Background
+## Background
 
 Seven months building a gamified financial-education product on my own, then
 eight months at BNP Paribas as a banking advisor, across from the people making
 the decisions that product was trying to teach. The layer that held my attention
 in both was the one underneath.
 
-#### Elsewhere
+## Elsewhere
 
 * Writing about leverage, judgment, and what AI changes: [@MaximeCoia](https://x.com/MaximeCoia)
 * [linkedin.com/in/maxime-coia](https://www.linkedin.com/in/maxime-coia/)
