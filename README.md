@@ -94,9 +94,10 @@ Small Unix utilities rebuilt one mechanism at a time: `mini_echo`, `mini_cat`,
 
 ## Now
 
-**Phase 1, `ms-01-inference`.** It is in progress. Its 40 measurement and
-inference exercises are done. They run from a stopwatch that ignores warm-up to
-the point where a served model breaks under load.
+**Phase 1, `ms-01-inference`.** It is in progress, and 45 of its 46 graded
+exercises pass. The 40 measurement and inference exercises are done. They run
+from a stopwatch that ignores warm-up to the point where a served model breaks
+under load. The other six are the school's C, and five of them pass.
 [The phase page](https://github.com/maximecoia/learning_tree-ML-systems/blob/main/ms-01-inference/README.md#what-to-do-in-order)
 lists the work in order.
 
@@ -111,9 +112,10 @@ published on 1 October 2026 and validated on 2 October. The
 [write-up that closes L1](https://github.com/maximecoia/learning_tree-ML-systems#what-closes-l1)
 lists what a stranger needs to replay it without asking a question.
 
-**The C under it.** The libft is written. It stays private, because it is a 42
-subject and the school's charter forbids publishing a solution. The C inference
-engine waits behind the common core.
+**The C under it.** The libft, `ft_printf` and `get_next_line` pass their
+graders. `push_swap` is the one left, and it follows the school's calendar. All
+four stay private, because they are 42 subjects and the school's charter forbids
+publishing a solution. The C inference engine waits behind the common core.
 
 ---
 
